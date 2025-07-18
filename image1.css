@@ -1,0 +1,24 @@
+*{
+    margin: 0 30px;
+    padding: 0;
+    box-sizing: border-box;
+    background-blend-mode: color-burn;
+
+} 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    mix-blend-mode: color-burn;
+   
+}   
+
+#itachi{
+    
+    box-shadow: 20px 5px 15px olive;
+}
+#itachi1{
+    filter: drop-shadow(10px 5px 20px green);
+}

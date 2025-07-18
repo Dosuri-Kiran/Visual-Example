@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+    <script>
+        function getFullName(event)
+        {
+            event.preventDefault();
+          let firstname=document.getElementById("firstname").value.trim();
+          let lastname=document.getElementById("lastname").value.trim();
+          let fullname=firstname+" "+lastname;
+          // document.getElementById("fullname").value=fullname;
+          document.getElementById("fullname").innerText=fullname;
+        }
+    </script>
+    <title>Full Name Generator</title>
+</head>
+<body>
+    <form onsubmit="getFullName(event)">
+    <table border="0">
+        <tr>
+            <td><LAbel for="firstname">First Name</LAbel></td>&nbsp;
+            <td><input type="text" id="firstname" placeholder="Enter first name" required></td>
+        </tr>
+        <tr>
+            <td><Label for="lastname">Last Name</Label></td>&nbsp;
+            <td><input type="text" id="lastname" placeholder="Enter second name" required></td>
+        </tr>
+        <tr>
+            <td><Label for="fullname">Full Name</Label></td>&nbsp;
+          <!--  <td><input type="text" id="fullname" placeholder="Get Full Name" readonly ></td>-->
+            <td><Label id="fullname"></Label></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit" style="background-color: green;">GetFullName</button>
+            </td>
+        </tr>
+        
+    </table>
+    </form>
+    <!-- <h2>example-1</h2>
+    <p>angularjs directives</p>
+   <div ng-app="">
+    <p>Name:<input type="text" ng-model="name"></p>
+    <p ng-bind="name"></p>
+   </div>  -->
+   <!-- <p>example-2</p>
+   <p>The ng-init directive initialise the angularjs application </p>
+   <div ng-app="" ng-init="fname='Kiran'">
+    <h2>The Name Is <span ng-bind="fname"></span></h2>
+   </div> -->
+
+</body>
+</html>
