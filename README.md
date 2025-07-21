@@ -12,6 +12,7 @@ This repository contains various HTML, CSS, and JavaScript mini projects and pra
 ## 📄 File Descriptions
 
 ### 🔸 HTML Files
+- `index.html` - All HTML Pages Visited by This One Page 
 - `Generate_FullName.html` - Generate Full Name (basic HTML)
 - `first.html` - First practice file (basic HTML)
 - `image.html`, `image1.html` - Image-based layout pages
